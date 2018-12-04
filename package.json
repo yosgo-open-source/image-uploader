@@ -1,32 +1,25 @@
 {
-  "name": "yosgo-editor",
-  "version": "1.1.11",
+  "name": "react-module-typescript",
+  "version": "0.0.1",
   "description": "",
   "main": "lib/index.js",
-  "dependencies": {
-    "react-modal": "^3.6.1",
-    "react-quill": "^1.3.2"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@types/react": "^16.4.14",
     "@types/react-dom": "^16.0.8",
-    "@types/react-modal": "^3.2.1",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
-    "styled-components": "^3.4.9",
     "typescript": "^3.1.1"
   },
   "peerDependencies": {
     "react": "^16.0.0",
-    "react-dom": "^16.0.0",
-    "styled-components": ">= 3"
+    "react-dom": "^16.0.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc && tsc -outDir demo/node_modules/yosgo-editor",
+    "build": "tsc",
     "prepublish": "yarn build",
-    "publish": "yarn publish",
-    "demo": "cd demo && yarn start"
+    "publish": "yarn publish"
   },
   "repository": {
     "type": "git",

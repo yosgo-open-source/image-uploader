@@ -1,4 +1,3 @@
-import Editor from "./Editor";
-import Viewer from "./Viewer";
+import App from "./App";
 
-export { Editor, Viewer };
+export { App };
