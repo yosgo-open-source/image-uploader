@@ -1,6 +1,6 @@
 {
   "name": "yosgo-image-uploader",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "",
   "main": "lib/index.js",
   "devDependencies": {
@@ -30,9 +30,9 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Kcin1993/yosgo-image-uploader/issues"
+    "url": "https://github.com/yosgo-open-source/yosgo-image-uploader/issues"
   },
-  "homepage": "",
+  "homepage": "https://github.com/yosgo-open-source/yosgo-image-uploader",
   "files": [
     "lib",
     "LICENSE",
