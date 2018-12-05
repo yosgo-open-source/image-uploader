@@ -1,19 +1,21 @@
 {
-  "name": "react-module-typescript",
-  "version": "0.0.1",
+  "name": "yosgo-image-uploader",
+  "version": "0.1.0",
   "description": "",
   "main": "lib/index.js",
-  "dependencies": {},
   "devDependencies": {
     "@types/react": "^16.4.14",
     "@types/react-dom": "^16.0.8",
+    "@types/styled-components": "^4.1.3",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
+    "styled-components": "^4.1.2",
     "typescript": "^3.1.1"
   },
   "peerDependencies": {
     "react": "^16.0.0",
-    "react-dom": "^16.0.0"
+    "react-dom": "^16.0.0",
+    "styled-components": ">= 3"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -23,14 +25,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Kcin1993/yosgo-editor.git"
+    "url": "https://github.com/yosgo-open-source/yosgo-image-uploader"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Kcin1993/yosgo-editor/issues"
+    "url": "https://github.com/Kcin1993/yosgo-image-uploader/issues"
   },
-  "homepage": "https://github.com/Kcin1993/yosgo-editor#readme",
+  "homepage": "",
   "files": [
     "lib",
     "LICENSE",
@@ -41,9 +43,9 @@
   },
   "types": "./lib/index.d.ts",
   "tags": [
-    "editor",
+    "image-uploader",
+    "imgur",
     "react",
-    "quill",
     "react-component"
   ]
 }

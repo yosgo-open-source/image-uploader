@@ -1,3 +1,3 @@
-import App from "./App";
+import Uploader from "./Uploader";
 
-export { App };
+export { Uploader };
