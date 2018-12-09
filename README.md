@@ -32,3 +32,10 @@ yarn add yosgo-image-uploader
 ### Example
 
 View example on [CodeSandBox](https://codesandbox.io/s/y068qqql6z)
+
+### Todo
+
+| Item     | description                                                                                     |
+| -------- | ----------------------------------------------------------------------------------------------- |
+| dnd      | drag to update images urls array order                                                          |
+| multiple | Support upload mutilple file or not. If negative only one image url in array and can be rewrite |
