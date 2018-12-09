@@ -15,7 +15,7 @@ Image upload module with react, imgur, typescript.
 styled-components is peerDependencies. If you don't install styled-components yarn add styled-components first.
 
 ```
-yarn add yosgo-image-uploader
+yarn add @yosgo/image-uploader
 ```
 
 ### props
