@@ -58,6 +58,7 @@ const DefaultWrap = styled.div`
     padding: 7px 10px;
     box-shadow: 0px;
     font-size: 17px;
+    background: white;
     img {
       width: auto;
       height: 20px;

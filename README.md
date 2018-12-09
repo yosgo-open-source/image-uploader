@@ -25,17 +25,11 @@ yarn add @yosgo/image-uploader
 | imgurClientId | yes      | string        | 至此申請 imgur app 並取得 imgurClientId |
 | urls          | yes      | Array<string> | 陣列，陣列值為圖片網址字串              |
 | onChange      | yes      | Function      | 更新 urls 陣列                          |
-| description   | no       | Function      | 上傳描述                                |
-| hint          | no       | Function      | 相關提示                                |
-| btnText       | no       | Function      | 上傳按鈕文字                            |
+| description   | no       | string        | 上傳描述                                |
+| hint          | no       | string        | 相關提示                                |
+| btnText       | no       | string        | 上傳按鈕文字                            |
+| multiple      | no       | boolean       | 是否一次上傳多張，預設為單張            |
 
 ### Example
 
 View example on [CodeSandBox](https://codesandbox.io/s/y068qqql6z)
-
-### Todo
-
-| Item     | description                                                                                     |
-| -------- | ----------------------------------------------------------------------------------------------- |
-| dnd      | drag to update images urls array order                                                          |
-| multiple | Support upload mutilple file or not. If negative only one image url in array and can be rewrite |

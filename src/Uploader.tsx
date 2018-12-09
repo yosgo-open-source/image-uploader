@@ -12,6 +12,7 @@ type Props = {
   description?: string;
   hint?: string;
   btnText?: string;
+  multiple?: boolean;
 };
 type State = {
   content: string;
@@ -100,9 +101,25 @@ export default class Uploader extends React.PureComponent<Props> {
     );
   };
 
+  handleOnReOrder = (type: string, index: number) => {
+    let newUrls = this.props.urls.slice();
+    let nextValue = this.props.urls[index + 1];
+    let currValue = this.props.urls[index];
+    let prevValue = this.props.urls[index - 1];
+    if (type === "prev" && prevValue) {
+      newUrls[index] = prevValue;
+      newUrls[index - 1] = currValue;
+      this.props.onChange(newUrls);
+    } else if (type === "next" && nextValue) {
+      newUrls[index] = nextValue;
+      newUrls[index + 1] = currValue;
+      this.props.onChange(newUrls);
+    }
+  };
+
   render() {
     const { content, drag } = this.state;
-    const { urls, description, hint, btnText } = this.props;
+    const { urls, description, hint, btnText, multiple } = this.props;
     return (
       <UploaderWrap>
         <input
@@ -113,7 +130,7 @@ export default class Uploader extends React.PureComponent<Props> {
           onDragOver={() => this.handleOnDragOver()}
           onDragLeave={() => this.handleOnDragLeave()}
           onDrop={() => this.handleOnDragLeave()}
-          multiple
+          multiple={multiple && multiple === true ? true : false}
         />
         {content && content !== "" ? <Mask>{content}</Mask> : null}
         {
@@ -123,7 +140,11 @@ export default class Uploader extends React.PureComponent<Props> {
             ) : (
               <div>
                 {urls && urls.length > 0 ? (
-                  <Images urls={urls} onRemove={this.handleRemove} />
+                  <Images
+                    urls={urls}
+                    onRemove={this.handleRemove}
+                    onReOrder={this.handleOnReOrder}
+                  />
                 ) : (
                   <Default
                     description={description}
